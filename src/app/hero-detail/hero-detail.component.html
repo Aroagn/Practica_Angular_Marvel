@@ -1,0 +1,62 @@
+<div *ngIf="hero">
+  <h2>Details</h2>
+
+  <div>
+    <label for="hero-id">Hero id: </label>
+    <input id="hero-name" [(ngModel)]="hero.data.results[0]" placeholder="Hero name"/>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="hero.data.results[1]" placeholder="Hero name"/>
+    <img src="{{ hero.data.results[2.0] }}.{{ hero.data.results[2.1] }}"
+      alt="{{ hero.data.results[1] }}">
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div *ngIf="hero">
+  <h2>{{ hero.data.results.name | uppercase }} Details</h2>
+  <div>
+    <label for="hero-id">Hero id: </label>
+    <input id="hero-name" [(ngModel)]="hero.data.results.id" placeholder="Hero name"/>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="hero.data.results.name" placeholder="Hero name"/>
+    <img src="{{ hero.data.results.thumbnail.path }}.{{ hero.data.results.thumbnail.extension }}"
+    alt="{{ hero.data.results.name }}">
+  </div>
+</div> -->
+
+<!-- <div *ngIf="hero">
+  <h2>{{ hero.name | uppercase }} Details</h2>
+  <div>
+    <label for="hero-id">Hero id: </label>
+    <input id="hero-name" [(ngModel)]="hero.id" placeholder="Hero name"/>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name"/>
+    <img src="{{ hero.thumbnail.path }}.{{ hero.thumbnail.extension }}"
+    alt="{{ hero.name }}">
+  </div>
+</div> -->

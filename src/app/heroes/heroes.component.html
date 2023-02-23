@@ -1,0 +1,11 @@
+<h2>My Heroes</h2>
+
+<ul class="heroes">
+  <li *ngFor="let hero of heroes | paginate: { itemsPerPage: 20, currentPage: p }">
+    <a routerLink="/detail/{{ hero.id }}">
+      <span class="badge">{{ hero.id }}</span> {{ hero.name }}
+    </a>
+  </li>
+</ul>
+
+<pagination-controls (pageChange)="p=$event" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
